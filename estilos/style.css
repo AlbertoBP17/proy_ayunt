@@ -92,6 +92,13 @@ a.browser_item:hover{
     letter-spacing: 0.2em;
     font-weight: bold;
 }
+a.cierre_sesion{
+    text-decoration: none;
+    float: right;
+    margin-right: 3%;
+    margin-top: -3%;
+    color: rgba(0,114,189,255);
+}
 
 /*-----*/
 #center_encabezado{
@@ -103,6 +110,10 @@ a.browser_item:hover{
     text-align: center;
     font-family: Cambria;
     font-size: 18px;
+}
+#discord{
+    float: right;
+    margin: auto auto;
 }
 
 /*-----*/
