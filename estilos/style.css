@@ -1,0 +1,151 @@
+/*index.css*/
+body.index{
+    font-family: fantasy;
+    background-image: url(../imagenes/index.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+/*Compatible con cualquier navegador*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+a.titulo{
+    text-align: center;
+    color: rgba(0,114,189,255);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 6em;
+    text-shadow: #555 7px 7px 5px;
+    text-decoration: none;
+}
+body.principal{
+    background-color: rgba(192,208,223,255);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*sesion.html*/
+div.form_conect{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+/*registro.html*/
+#texto_volver{
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0,114,189,255);
+    text-shadow: #555 5px 5px 3px;
+    font-weight: bold;
+}
+/*principal.css*/
+#titulo{
+    height: 7em;
+    padding-top: 5%;
+    background-image: url(../imagenes/rociana.jpg);
+    background-size: cover;
+    background-position: center;
+}
+p.texto_titulo{
+    font-family: Cambria;
+    text-align: center;
+    font-size: 35px;
+    color: rgba(0,114,189,255);
+    text-shadow: #555 5px 5px 3px;
+    font-weight: bold;
+}
+#principal{
+    height: 77em;
+}
+#encabezado{
+    height: 6em;
+    background-color: rgba(255, 255, 255, 0.329);
+    font-family: Cambria;
+}
+#noticias{
+    margin-top: 1em;
+    height: 50em;
+}
+
+a.browser_item{
+    font-size: 15px;
+    margin-top: 2%;
+    text-decoration: none;
+    color: rgba(0,114,189,255);
+    text-shadow: #555 3px 3px 3px;
+    float: left;
+    margin-left: 5%;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-size: 18px;
+}
+a.browser_item:hover{
+    display: block;
+    color: rgb(164,83,84);
+    transition: all 0.9s ease;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+
+/*-----*/
+#center_encabezado{
+    text-align: center;
+    font-family: Cambria;
+    font-size: 30px;
+}
+#center{
+    text-align: center;
+    font-family: Cambria;
+    font-size: 18px;
+}
+
+/*-----*/
+
+/*concejalias.css*/
+
+#principal_concejalias{
+    height: auto;
+}
+#contenido_concejalias{
+    height: 82em;
+    margin-top: 1%;
+}
+#articulo_concejalia{
+    height: 27em;
+    width: 30em;
+    margin-top: 2%;
+    float: left;
+    margin-left: 6%;
+    text-align: center;
+}
+#posicion{
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 250px;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.15)
+}
+#logo_aytm{
+    margin-top: -6%;
+}
+#texto_concejal{
+    margin-top: -12%;
+    background-color: rgba(213,222,232,255);
+    height: 8em;
+    font-family: Cambria;
+}
+p.nombre_concejal{
+    padding-top: 1em;
+    font-size: 28px;
+}
+p.info_concejal{
+    margin-top: -10px;
+    font-size: 14px;
+}
+
