@@ -18,7 +18,7 @@
                         <label id="dni">DNI: &nbsp;</label>
                         <input id="dni" name="dni" type="text" placeholder="DNI*" maxlength="9" size="50" required/>
                         <br/><br/>
-                        <label id="nombre">Nombro: &nbsp;</label>
+                        <label id="nombre">Nombre: &nbsp;</label>
                         <input id="nombre" name="nombre" type="text" placeholder="Nombre*" maxlength="40" size="50" required/>
                         <br/><br/>
                         <label id="correo">Correo: &nbsp;</label>

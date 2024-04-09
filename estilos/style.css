@@ -1,6 +1,6 @@
 /*index.css*/
 body.index{
-    font-family: fantasy;
+    font-family: Verdana;
     background-image: url(../imagenes/index.jpg);
     background-size: cover;
     background-position: center center;
@@ -53,7 +53,7 @@ div.form_conect{
     background-position: center;
 }
 p.texto_titulo{
-    font-family: Cambria;
+    font-family: Verdana;
     text-align: center;
     font-size: 35px;
     color: rgba(0,114,189,255);
@@ -98,17 +98,19 @@ a.cierre_sesion{
     margin-right: 3%;
     margin-top: -3%;
     color: rgba(0,114,189,255);
+    font-family: Verdana;
+    font-size: 12px;
 }
 
 /*-----*/
 #center_encabezado{
     text-align: center;
-    font-family: Cambria;
+    font-family: Verdana;
     font-size: 30px;
 }
 #center{
     text-align: center;
-    font-family: Cambria;
+    font-family: Verdana;
     font-size: 18px;
 }
 #discord{
@@ -117,6 +119,45 @@ a.cierre_sesion{
 }
 
 /*-----*/
+
+/*ayuntamiento.css*/
+#inf-ayunt{
+    height: 55em;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 5px;
+}
+p.titulo-ayunt{
+    font-size: 27px;
+    font-family: Verdana;
+    margin-top: 1px;
+    text-shadow: #555 1px 2px 3px;
+    margin-left: 5%;
+}
+#content-ayunt{
+    margin-top: 1px;
+}
+#texto-ayunt{
+    font-family: Verdana;
+    font-size: 14px;
+}
+#posic-alcal{
+    height: 380px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 15px;
+}
+p.texto-ayunt{
+    margin-bottom: -13px;
+    margin-left: 13px;
+}
+p.desp-texto-ayunt{
+    text-align: center;
+}
+
 
 /*concejalias.css*/
 
@@ -149,11 +190,11 @@ a.cierre_sesion{
     margin-top: -12%;
     background-color: rgba(213,222,232,255);
     height: 8em;
-    font-family: Cambria;
+    font-family: Verdana;
 }
 p.nombre_concejal{
     padding-top: 1em;
-    font-size: 28px;
+    font-size: 27px;
 }
 p.info_concejal{
     margin-top: -10px;
