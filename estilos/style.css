@@ -30,12 +30,23 @@ body.principal{
     padding: 0;
 }
 /*sesion.html*/
-div.form_conect{
-    text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
+#form_conect{
+    font-family: Verdana;
+    font-size: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 2%;
 }
+.botonsito{
+    font-family: Verdana;
+    font-size: 12px;
+    margin-left: 5%;
+}
+.fondo_form{
+    background-color: rgba(114, 114, 114, 0.233);
+    border-radius: 10px;
+}
+
 /*registro.html*/
 #texto_volver{
     text-align: center;
@@ -55,7 +66,7 @@ div.form_conect{
 p.texto_titulo{
     font-family: Verdana;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     color: rgba(0,114,189,255);
     text-shadow: #555 5px 5px 3px;
     font-weight: bold;
@@ -116,6 +127,13 @@ a.cierre_sesion{
 #discord{
     float: right;
     margin: auto auto;
+    height: 64px;
+}
+#php{
+    font-family: Verdana;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2em;
 }
 
 /*-----*/
@@ -160,7 +178,6 @@ p.desp-texto-ayunt{
 
 
 /*concejalias.css*/
-
 #principal_concejalias{
     height: auto;
 }
@@ -173,7 +190,7 @@ p.desp-texto-ayunt{
     width: 30em;
     margin-top: 2%;
     float: left;
-    margin-left: 6%;
+    margin-left: 10%;
     text-align: center;
 }
 #posicion{

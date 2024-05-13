@@ -12,23 +12,22 @@
         </div>
         <div id="form_conect">
             <form name="conectarse" method="POST" action="compruebalogin.php">
-                <fieldset>
+                <fieldset class="fondo_form">
                     <legend>Control de usuarios</legend>
                         <br/>
                         <label id="correo">Correo: &nbsp;</label>
-                        <input id="correo" name="correo" type="email" placeholder="Email*" maxlength="80" size="50" required/>
+                        <input id="correo" name="correo" type="email" pattern=".+@gmail.com" placeholder="Email*" title="El formato correcto es @gmail.com" maxlength="80" size="50" required/>
                         <br/><br/>
                         <label id="contraseña">Contraseña: &nbsp;</label>
                         <input id="contraseña" name="contraseña" type="password" placeholder="Contraseña*" maxlength="30" size="20" required/>
                         <br/><br/>
                 </fieldset>
                 <br/>
-                <input type="submit" value="Acceder"/>
+                <input type="submit" value="Iniciar sesión" class="botonsito"/>
             </form>
             <br/>
-            <a href="registro.php"><input type="submit" value="Nuevo registro"></a>
+            <a href="registro.php"><input type="submit" value="Nuevo registro" class="botonsito"></a>
         </div>
-
 <?php
 	session_start();
 	if (isset($_SESSION['errores'])) {
