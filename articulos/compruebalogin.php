@@ -31,9 +31,9 @@
 
 		<div id="php">
 <?php
-	session_start();
 	
 	include_once "bbdd.php";
+	include_once "comunes.php";
 
 	$correo_form = "";
 	$contraseña_form = "";
@@ -57,7 +57,11 @@
 			$correo = mysqli_fetch_array($resultado_sql, MYSQLI_ASSOC);
 			if($contraseña_form==$correo['contraseña']){
 				echo "Credenciales correctas<br/>";
-				header ("Location: principal.html");
+				session_start();
+                $_SESSION["session_id"] = session_id();
+				        $_SESSION["usuario_session"] = $_POST["correo"];  
+				header ("Location: servicios.php");
+				exit();
 			} else {
 				echo "ERROR. El correo y/o la contraseña son incorrectos<br/>";	
 			}

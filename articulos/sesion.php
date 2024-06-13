@@ -1,3 +1,11 @@
+<?php
+
+if (isset($_SESSION["session_id"]))
+{
+    header("location:servicios.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>

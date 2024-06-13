@@ -113,6 +113,15 @@ a.cierre_sesion{
     font-family: Verdana;
     font-size: 12px;
 }
+b.usuario{
+    text-decoration: none;
+    float: left;
+    margin-left: 3%;
+    margin-top: -3%;
+    color: rgba(0,114,189,255);
+    font-family: Verdana;
+    font-size: 12px;
+}
 #explicacion{
     margin-top: 25px;
     color: rgba(0,114,189,255);
@@ -142,7 +151,7 @@ p.espacioarriba{
     margin-left: 5%;
     margin-right: 5%;
     font-family: Monospace;
-    height: 70em;
+    height: 65em;
     background: rgba(116, 116, 116, 0.075);
 }
 #cab_novedades{
@@ -201,6 +210,9 @@ img.redessoc{
 #contenido_pie{
     text-align: center;
     padding-top: 20px;
+}
+p.color_texto{
+    color: black;
 }
 a.click{
     color: rgba(0,114,189,255);
