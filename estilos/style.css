@@ -72,9 +72,7 @@ p.texto_titulo{
     text-shadow: #555 5px 5px 3px;
     font-weight: bold;
 }
-#principal{
-    height: 77em;
-}
+
 #encabezado{
     height: 6em;
     background-color: rgba(255, 255, 255, 0.329);
@@ -261,6 +259,7 @@ p.titulo-ayunt{
     text-shadow: #555 1px 2px 3px;
     margin-left: 5%;
     text-align: center;
+    padding-top: 2%;
 }
 #content-ayunt{
     margin-top: 1px;
@@ -285,24 +284,32 @@ p.texto-ayunt{
 p.desp-texto-ayunt{
     text-align: center;
     font-weight: bold;
+    padding-bottom: 2%;
 }
 
 
 /*concejalias.css*/
-#principal_concejalias{
-    height: auto;
-}
+
 #contenido_concejalias{
-    height: 82em;
     margin-top: 1%;
     font-family: Verdana;
+    height: 154em;
+    border: solid 1px red;
 }
-#articulo_concejalia{
+#articulo_concejalia1{
     height: 27em;
     width: 30em;
     margin-top: 2%;
     float: left;
     margin-left: 10%;
+    text-align: center;
+}
+#articulo_concejalia2{
+    height: 27em;
+    width: 30em;
+    margin-top: 2%;
+    float: right;
+    margin-right: 10%;
     text-align: center;
 }
 #posicion{
@@ -328,5 +335,68 @@ p.nombre_concejal{
 p.info_concejal{
     margin-top: -20px;
     font-size: 14px;
+}
+/*empadronado.css*/
+#empadronado{
+    margin-top: 4%;
+    text-align: center;
+}
+b.empadronado{
+    color: rgba(0,114,189,255);
+    font-family: Verdana;
+    font-size: 12px;
+}
+/*defuncion.css*/
+#defuncion{
+    margin-top: 4%;
+    text-align: center;
+}
+b.defuncion{
+    color: rgba(0,114,189,255);
+    font-family: Verdana;
+    font-size: 12px;
+}
+/*empleo.css*/
+#empleo{
+    margin-top: 4%;
+    text-align: center;
+}
+b.empleo{
+    color: rgba(0,114,189,255);
+    font-family: Verdana;
+    font-size: 12px;
+}
+/*datos_interes.css*/
+#datos_interes{
+    margin-top: 25px;
+    color: rgba(0,114,189,255);
+    font-family: Verdana;
+    font-size: 12px;
+    background: rgba(116, 116, 116, 0.075);
+    height: 20em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#texto_interes{
+    padding-top: 1%;
+    text-align: center;
+}
+table.seg_ciudadana{
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+td.titulo_table{
+    font-weight: bold;
+    border: solid 1px;
+}
+#datos_interes_mapa{
+    margin-top: 25px;
+    color: rgba(0,114,189,255);
+    font-family: Verdana;
+    font-size: 12px;
+    background: rgba(116, 116, 116, 0.075);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 

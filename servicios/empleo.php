@@ -14,7 +14,7 @@
                 session_start();
                 if (isset($_SESSION["session_id"])){
                     echo '<b class="usuario">Bienvenid@: '.$_SESSION["usuario_session"].'</b>';
-                echo '<a href="cerrar_sesion.php" class="cierre_sesion">Cerrar Sesion</a>';
+                echo '<a href="../articulos/cerrar_sesion.php" class="cierre_sesion">Cerrar Sesion</a>';
                 }
             ?>
                 <p class="texto_titulo">Ayuntamiento Rociana del Condado</p>
@@ -23,12 +23,12 @@
         <div id="principal">
             <div id="encabezado">
                 <div id="browser">
-                    <a href="principal.html" class="browser_item">Inicio</a>
-                    <a href="ayuntamiento.html" class="browser_item">Ayuntamiento</a>
-                    <a href="concejalias.html" class="browser_item">Equipo de Gobierno</a>
-                    <a href="proyecto_punto_vuela.html" class="browser_item">Proyecto Punto Vuela</a>
-                    <a href="servicios.php" class="browser_item">Servicios</a>
-                    <a href="datos_interes.html" class="browser_item">Datos de interes</a>
+                    <a href="../articulos/principal.html" class="browser_item">Inicio</a>
+                    <a href="../articulos/ayuntamiento.html" class="browser_item">Ayuntamiento</a>
+                    <a href="../articulos/concejalias.html" class="browser_item">Equipo de Gobierno</a>
+                    <a href="../articulos/proyecto_punto_vuela.html" class="browser_item">Proyecto Punto Vuela</a>
+                    <a href="../articulos/servicios.php" class="browser_item">Servicios</a>
+                    <a href="../articulos/datos_interes.html" class="browser_item">Datos de interes</a>
                     <a href="https://discord.gg/KyTBVZAVay" target="blank"><img src="../imagenes/logo_discord.png" id="discord"/></a>
                 </div>
             </div>
@@ -51,6 +51,16 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="empleo">
+                <?php
+                if (isset($_SESSION["session_id"])){
+                    echo '<b class="empleo">El usuario: '.$_SESSION["usuario_session"].' ha solicitado información sobre los empleos disponibles en el Ayuntamiento</b>';
+                    echo '<br/>';
+                    echo '<b class="empleo">El departamento del SAC (Servicio de Atención al Ciudadano) se pondrá en contacto con usted mediante su correo electrónico</b>';
+                    echo '<br/><br/>';
+                }   
+            ?>
             </div>
             <div id="pie_pagina">
                 <div id="contenido_pie">
