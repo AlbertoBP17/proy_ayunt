@@ -46,7 +46,7 @@
                 }   
             ?>
             </div>
-            <iframe class="visor_pdf" src="../documentos/Definición_Proyecto_ABP.pdf" type="application/pdf" width="90%" height="600em"></iframe>
+            <iframe class="visor_pdf" src="../documentos/Resguardo de Certificado de defuncion.pdf" type="application/pdf" width="90%" height="600em"></iframe>
             <div id="pie_pagina">
                 <div id="contenido_pie">
                     <p class="color_texto"><b>Ayuntamiento de Rociana del Condado</b> &copy; 2024 | Diseñado por Alberto Betanzos</p>
