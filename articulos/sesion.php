@@ -18,6 +18,9 @@ if (isset($_SESSION["session_id"]))
         <div id="titulo">
             <p class="texto_titulo">Ayuntamiento Rociana del Condado</p>
         </div>
+        <div id="flecha">
+            <a href="../articulos/principal.html"><img src="../imagenes/flecha_atras.png" class="flecha_atras"></img></a>
+        </div>
         <div id="form_conect">
             <form name="conectarse" method="POST" action="compruebalogin.php">
                 <fieldset class="fondo_form">

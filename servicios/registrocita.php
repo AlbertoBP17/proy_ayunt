@@ -12,14 +12,16 @@
         </div>
         <div id="form_conect">
         <form name="conectarse" method="POST" action="registrocita.php">
-                <fieldset class="fondo_form">
+		<fieldset class="fondo_form">
                     <legend>Solicitud de citas con el Alcalde</legend>
                         <br/>
                         <label id="dni">DNI: &nbsp;</label>
                         <input id="dni" name="dni" type="text" placeholder="DNI*" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" maxlength="9" size="50" required/>
                         <br/><br/>
                         <label id="motivo">Motivo de la cita: &nbsp;</label>
-                        <input id="motivo" name="motivo" type="text" placeholder="Motivo de la cita con el Alcalde*" maxlength="300" size="50" required/>
+                        <div class="col-lg-12">
+                        <textarea name="motivo" id="motivo" rows="4" cols="50" placeholder="Motivo de la cita con el Alcalde*" required></textarea>
+                        </div>
                         <br/><br/>
                         <label id="preferencia">Preferencia horaria: &nbsp;</label>
                         <input id="preferencia" name="preferencia" type="radio"required/>Mañana

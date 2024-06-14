@@ -32,37 +32,21 @@
                     <a href="https://discord.gg/KyTBVZAVay" target="blank"><img src="../imagenes/logo_discord.png" id="discord"/></a>
                 </div>
             </div>
-            <div class="container mt-3">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="d-grid gap-3">
-                            <a href="../servicios/empadronado.php">
-                                <buttom type="button" class="btn btn-primary btn-block">Certificado de empadronamiento</buttom>
-                            </a>
-                            <a href="../servicios/defuncion.php">
-                                <button type="button" class="btn btn-primary btn-block">Certificado por defunción</button>
-                            </a>
-                            <a href="../servicios/citas.php">
-                                <button type="button" class="btn btn-primary btn-block">Cita con el Alcalde</button>
-                            </a>
-                            <a href="../servicios/empleo.php">
-                                <button type="button" class="btn btn-primary btn-block">Ofertas de empleo</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div id="flecha">
+                <a href="../articulos/servicios.php"><img src="../imagenes/flecha_atras.png" class="flecha_atras"></img></a>
             </div>
             <div id="defuncion">
                 <?php
                 if (isset($_SESSION["session_id"])){
                     echo '<b class="defuncion">Estamos al tanto de que un familiar del usuario: '.$_SESSION["usuario_session"].' ha fallecido</b>';
                     echo '<br/>';
-                    echo '<b class="defuncion">Certificado de defunción solicitado correctamente. Lamentamos mucho su pérdida irreparable.</b>';
+                    echo '<b class="defuncion">Aquí puedes previsualizar el Certificado de defunción. De todos modos nos encargamos de enviartelo al correo registrado. Lamentamos mucho su pérdida irreparable.</b>';
                     echo '<br/><br/>';
                     echo '<b class="defuncion">Revise el correo electrónico para verificar que ya cuenta con el certificado</b>';
                 }   
             ?>
             </div>
+            <iframe class="visor_pdf" src="../documentos/Definición_Proyecto_ABP.pdf" type="application/pdf" width="90%" height="600em"></iframe>
             <div id="pie_pagina">
                 <div id="contenido_pie">
                     <p class="color_texto"><b>Ayuntamiento de Rociana del Condado</b> &copy; 2024 | Diseñado por Alberto Betanzos</p>

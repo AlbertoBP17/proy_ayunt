@@ -36,18 +36,10 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="d-grid gap-3">
-                            <a href="../servicios/empadronado.php">
-                                <buttom type="button" class="btn btn-primary btn-block">Certificado de empadronamiento</buttom>
-                            </a>
-                            <a href="../servicios/defuncion.php">
-                                <button type="button" class="btn btn-primary btn-block">Certificado por defunción</button>
-                            </a>
-                            <a href="../servicios/citas.php">
-                                <button type="button" class="btn btn-primary btn-block">Cita con el Alcalde</button>
-                            </a>
-                            <a href="../servicios/empleo.php">
-                                <button type="button" class="btn btn-primary btn-block">Ofertas de empleo</button>
-                            </a>
+                            <a href="../servicios/empadronado.php" class="btn btn-primary btn-block" role="button">Certificado de empadronamiento</a>
+                            <a href="../servicios/defuncion.php" class="btn btn-primary btn-block" role="button">Certificado de defunción</a>
+                            <a href="../servicios/citas.php" class="btn btn-primary btn-block" role="button">Cita con el Alcalde</a>
+                            <a href="../servicios/empleo.php" class="btn btn-primary btn-block" role="button">Ofertas de empleo</a>
                         </div>
                     </div>
                 </div>

@@ -35,6 +35,6 @@
         </div>
     </body>
     <p id="texto_volver">
-		<a id="texto_volver" href="sesion.php">Volver al menú principal</a>
+		<a id="texto_volver" href="sesion.php">Volver a página de login</a>
 	</p>
 </html>

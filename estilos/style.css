@@ -35,7 +35,7 @@ body.principal{
     font-size: 15px;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 .botonsito{
     font-family: Verdana;
@@ -294,7 +294,6 @@ p.desp-texto-ayunt{
     margin-top: 1%;
     font-family: Verdana;
     height: 154em;
-    border: solid 1px red;
 }
 #articulo_concejalia1{
     height: 27em;
@@ -338,7 +337,7 @@ p.info_concejal{
 }
 /*empadronado.css*/
 #empadronado{
-    margin-top: 4%;
+    margin-top: 1%;
     text-align: center;
 }
 b.empadronado{
@@ -346,9 +345,14 @@ b.empadronado{
     font-family: Verdana;
     font-size: 12px;
 }
+iframe.visor_pdf{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
 /*defuncion.css*/
 #defuncion{
-    margin-top: 4%;
+    margin-top: 1%;
     text-align: center;
 }
 b.defuncion{
@@ -358,7 +362,7 @@ b.defuncion{
 }
 /*empleo.css*/
 #empleo{
-    margin-top: 4%;
+    margin-top: 1%;
     text-align: center;
 }
 b.empleo{
@@ -399,4 +403,18 @@ td.titulo_table{
     margin-left: 5%;
     margin-right: 5%;
 }
-
+/*flechita*/
+#flecha{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+img.flecha_atras{
+    width: 40px;
+}
+/*citas.php*/
+p.texto_volver{
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0,114,189,255);
+    text-shadow: #555 5px 5px 3px;
+}

@@ -16,6 +16,16 @@
                     echo '<b class="usuario">Bienvenid@: '.$_SESSION["usuario_session"].'</b>';
                 echo '<a href="../articulos/cerrar_sesion.php" class="cierre_sesion">Cerrar Sesion</a>';
                 }
+                include_once "../articulos/bbdd.php";
+                $conexion = mysqli_connect($server, $user, $password, $bbdd);
+
+                    if (!$conexion) {
+                        die ("Error en la conexión a la base de datos: " . mysqli_connect_error());
+                    }
+
+                    $sql = "select * from oferta_empleo";
+                    $resultado_sql = mysqli_query($conexion, $sql);
+                    $ofertas = mysqli_fetch_all($resultado_sql,MYSQLI_ASSOC);
             ?>
                 <p class="texto_titulo">Ayuntamiento Rociana del Condado</p>
             
@@ -32,36 +42,37 @@
                     <a href="https://discord.gg/KyTBVZAVay" target="blank"><img src="../imagenes/logo_discord.png" id="discord"/></a>
                 </div>
             </div>
-            <div class="container mt-3">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="d-grid gap-3">
-                            <a href="../servicios/empadronado.php">
-                                <buttom type="button" class="btn btn-primary btn-block">Certificado de empadronamiento</buttom>
-                            </a>
-                            <a href="../servicios/defuncion.php">
-                                <button type="button" class="btn btn-primary btn-block">Certificado por defunción</button>
-                            </a>
-                            <a href="../servicios/citas.php">
-                                <button type="button" class="btn btn-primary btn-block">Cita con el Alcalde</button>
-                            </a>
-                            <a href="../servicios/empleo.php">
-                                <button type="button" class="btn btn-primary btn-block">Ofertas de empleo</button>
-                            </a>
-                        </div>
+            <div id="flecha">
+                <a href="../articulos/servicios.php"><img src="../imagenes/flecha_atras.png" class="flecha_atras"></img></a>
+            </div>
+            <div class="container p-2 my-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="shadow p-3 mb-3 bg-white rounded">
+                    <div class="text-center">
+                        <h3> Ofertas de empleo</h3>
                     </div>
+                    <table class="table table-hover table-striped table-warning">
+                        <thead>
+                            <tr>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Vigencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <!--bloque PHP para cargar el select con los datos de la BD. -->
+                             <?php foreach($ofertas as $oferta){ ?>
+							<tr>
+								<td><?php echo $oferta['descripcion'] ?></td>
+								<td><?php echo $oferta['vigencia'] ?></td>
+							</tr>
+							<?php } ?>                           
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div id="empleo">
-                <?php
-                if (isset($_SESSION["session_id"])){
-                    echo '<b class="empleo">El usuario: '.$_SESSION["usuario_session"].' ha solicitado información sobre los empleos disponibles en el Ayuntamiento</b>';
-                    echo '<br/>';
-                    echo '<b class="empleo">El departamento del SAC (Servicio de Atención al Ciudadano) se pondrá en contacto con usted mediante su correo electrónico</b>';
-                    echo '<br/><br/>';
-                }   
-            ?>
-            </div>
+        </div>
+    </div>
             <div id="pie_pagina">
                 <div id="contenido_pie">
                     <p class="color_texto"><b>Ayuntamiento de Rociana del Condado</b> &copy; 2024 | Diseñado por Alberto Betanzos</p>
